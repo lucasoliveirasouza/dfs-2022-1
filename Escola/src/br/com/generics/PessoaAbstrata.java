@@ -10,7 +10,7 @@ public abstract class PessoaAbstrata {
     private Date dataNascimento;
     private String cpf;
 
-    
+
     private Endereco endereco;
 
     public PessoaAbstrata(String nome, String telefone, Date dataNascimento, String cpf) {
