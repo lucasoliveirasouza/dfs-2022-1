@@ -7,16 +7,14 @@ import java.util.Date;
 public abstract class PessoaAbstrata {
     private String nome;
     private String telefone;
-    private Date dataNascimento;
+    private String sexo;
     private String cpf;
-
-
     private Endereco endereco;
 
-    public PessoaAbstrata(String nome, String telefone, Date dataNascimento, String cpf) {
+    public PessoaAbstrata(String nome, String telefone, String sexo, String cpf) {
         this.nome = nome;
         this.telefone = telefone;
-        this.dataNascimento = dataNascimento;
+        this.sexo = sexo;
         this.cpf = cpf;
     }
 
@@ -44,12 +42,12 @@ public abstract class PessoaAbstrata {
         this.telefone = telefone;
     }
 
-    public Date getDataNascimento() {
-        return dataNascimento;
+    public String getSexo() {
+        return sexo;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
     public String getCpf() {

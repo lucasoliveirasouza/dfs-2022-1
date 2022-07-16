@@ -7,8 +7,8 @@ import java.util.Date;
 public class Professor extends PessoaAbstrata {
     private double salario;
 
-    public Professor(String nome, String telefone, Date dataNascimento, String cpf, double salario) {
-        super(nome, telefone, dataNascimento, cpf);
+    public Professor(String nome, String telefone, String sexo, String cpf, double salario) {
+        super(nome, telefone, sexo, cpf);
         this.salario = salario;
     }
 
