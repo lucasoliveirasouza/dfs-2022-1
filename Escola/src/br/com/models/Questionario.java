@@ -6,6 +6,7 @@ public class Questionario implements IAvaliacao {
 
     @Override
     public double obterNota(double nota) {
+
         return nota * 0.1;
     }
 }

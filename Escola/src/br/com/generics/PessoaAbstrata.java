@@ -2,8 +2,6 @@ package br.com.generics;
 
 import br.com.models.Endereco;
 
-import java.util.Date;
-
 public abstract class PessoaAbstrata {
     private String nome;
     private String telefone;
@@ -11,11 +9,12 @@ public abstract class PessoaAbstrata {
     private String cpf;
     private Endereco endereco;
 
-    public PessoaAbstrata(String nome, String telefone, String sexo, String cpf) {
+    public PessoaAbstrata(String nome, String telefone, String sexo, String cpf, Endereco endereco) {
         this.nome = nome;
         this.telefone = telefone;
         this.sexo = sexo;
         this.cpf = cpf;
+        this.endereco = endereco;
     }
 
     public Endereco getEndereco() {
