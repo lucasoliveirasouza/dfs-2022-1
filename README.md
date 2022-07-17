@@ -6,5 +6,7 @@
 Cenário implementado:
 
 
-![Diagrama de classes](https://user-images.githubusercontent.com/26170686/179374627-5eab4bec-d33b-40e3-b236-faf12a90cf62.png)
+![Diagrama de classes](https://user-images.githubusercontent.com/26170686/179375466-011889c5-e2fb-4c12-a911-1dd17afa6170.png)
+
+
 
