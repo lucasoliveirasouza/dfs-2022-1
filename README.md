@@ -7,7 +7,8 @@
 Cenário implementado:
 
 
-![Diagrama de classes](https://user-images.githubusercontent.com/26170686/179375466-011889c5-e2fb-4c12-a911-1dd17afa6170.png)
+![Diagrama de classes](https://user-images.githubusercontent.com/26170686/179402413-7c40cd08-d2e2-4ac0-b157-af85dd4a94b8.png)
+
 
 
 
