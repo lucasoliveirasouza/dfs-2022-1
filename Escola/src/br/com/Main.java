@@ -1,9 +1,7 @@
 package br.com;
 
-import br.com.models.Aluno;
-import br.com.models.Endereco;
-import br.com.models.Professor;
-import br.com.models.Turma;
+import br.com.generics.IAvaliacao;
+import br.com.models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +20,39 @@ public class Main {
         Turma turma1 = new Turma("2° ano B");
         turma1.setAlunos(aluno1);
         turma1.setAlunos(aluno2);
+
+        //Criando disciplina e associando o professor a ela
+        Disciplina disciplina1 = new Disciplina("Matemática", 64);
+        disciplina1.setProfessor(professor);
+
+        //Associando disciplina a uma turma
+        turma1.setDisciplinas(disciplina1);
+
+        //Criando avaliações para uma disciplina
+        IAvaliacao avaliacao = new Prova();
+        disciplina1.setAvaliacoes(avaliacao);
+
+        avaliacao = new Questionario();
+        disciplina1.setAvaliacoes(avaliacao);
+
+        avaliacao = new Prova();
+        disciplina1.setAvaliacoes(avaliacao);
+
+        avaliacao = new Prova();
+        disciplina1.setAvaliacoes(avaliacao);
+
+        double notaFinal = 0;
+
+        notaFinal += disciplina1.getAvaliacoes().get(0).obterNota(8);
+        notaFinal += disciplina1.getAvaliacoes().get(1).obterNota(10);
+        notaFinal += disciplina1.getAvaliacoes().get(2).obterNota(6);
+        notaFinal += disciplina1.getAvaliacoes().get(3).obterNota(5);
+
+        System.out.println("A nota final é: " + notaFinal);
+
+
+
+
 
 
 

@@ -13,6 +13,7 @@ public class Disciplina {
     public Disciplina(String nome, int cargaHoraria) {
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
+        avaliacoes = new ArrayList<IAvaliacao>();
     }
 
     public Professor getProfessor() {

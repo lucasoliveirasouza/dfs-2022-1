@@ -8,7 +8,10 @@ public class Turma {
     private ArrayList<Disciplina> disciplinas;
 
     public Turma(String nome) {
+
         this.nome = nome;
+        disciplinas = new ArrayList<Disciplina>();
+        alunos = new ArrayList<Aluno>();
     }
 
     public ArrayList<Aluno> getAlunos() {
