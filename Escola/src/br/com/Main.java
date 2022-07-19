@@ -43,6 +43,7 @@ public class Main {
 
         double notaFinal = 0;
 
+        //Cada avaliação vai calcular a nota conforme definido.
         notaFinal += disciplina1.getAvaliacoes().get(0).obterNota(8);
         notaFinal += disciplina1.getAvaliacoes().get(1).obterNota(10);
         notaFinal += disciplina1.getAvaliacoes().get(2).obterNota(6);
